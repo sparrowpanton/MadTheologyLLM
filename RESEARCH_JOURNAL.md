@@ -54,7 +54,7 @@ Now spanning six countries, four continents. The Zainab case study (Muslim woman
 
 ### Lambda Labs grant
 
-Applied for $5,000 in cloud GPU credits. If funded, this covers Tier 3 models (GPT-OSS 20B, Llama 3.1 8B) with room to spare. The GitHub repo (github.com/sparrowpanton/MadTheologyLLM) is the project page linked in the application.
+Applied for $5,000 in cloud GPU credits. If funded, this covers Tier 3 models (GPT-OSS 20B, Llama 3.1 8B) with room to spare. The GitHub repo (github.com/sparrowpanton/Disability-Justice-LLM, renamed from MadTheologyLLM on March 28) is the project page linked in the application.
 
 ### How I'm feeling
 

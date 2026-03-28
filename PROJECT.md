@@ -1,4 +1,4 @@
-# Mad Theology LLM Project
+# Disability Justice LLM Project
 
 ## The Pitch
 

@@ -1,7 +1,7 @@
 # Lambda Research Grant — Short Answers
 
 ## Related Publications
-https://github.com/sparrowpanton/MadTheologyLLM
+https://github.com/sparrowpanton/Disability-Justice-LLM
 
 ---
 

@@ -1,4 +1,4 @@
-# START HERE — Mad Theology LLM Project
+# START HERE — Disability Justice LLM Project
 
 ## For Claude (Cowork / Claude Code sessions)
 
@@ -6,9 +6,9 @@ Hi Claude. Sparrow has an ongoing research project here. Before doing anything, 
 
 ### What is this project?
 
-**Training Neuro-Humble AI** — A comparative study fine-tuning open-source language models on Mad Studies, disability theology, and neurodivergent-informed spiritual care texts. The goal is to test whether fine-tuning can shift models away from pathologizing responses and toward "neuro-humble" AI behaviour.
+**Training Neuro-Humble AI** — A Disability Justice approach to fine-tuning open-source language models for mental health and neurodiversity contexts. The goal is to test whether fine-tuning on Mad Studies, Disability Justice, and neurodivergent-informed care texts can shift models away from pathologizing responses and toward "neuro-humble" AI behaviour.
 
-PI: Dr. Sparrow (Amy) Panton, Emmanuel College, University of Toronto.
+PI: Dr. Sparrow (Amy) Panton, Emmanuel College, University of Toronto. Also a psychotherapist in training at CAMH.
 
 ### Key concept: "Formation, not information"
 
@@ -17,7 +17,7 @@ We're training the models' *posture*, not their knowledge — borrowing from how
 ### Project location
 
 - **Local:** `/Users/sparrowpanton/Documents/MadTheologyLLM/`
-- **GitHub:** github.com/sparrowpanton/MadTheologyLLM (username: sparrowpanton)
+- **GitHub:** github.com/sparrowpanton/Disability-Justice-LLM (renamed from MadTheologyLLM on March 28, 2026)
 - **GitHub CLI:** authenticated via `gh` on Sparrow's Mac Mini
 
 ### Key files
@@ -55,14 +55,14 @@ We're training the models' *posture*, not their knowledge — borrowing from how
 
 Mac Mini M4, 16GB unified memory, Apple Silicon. Ollama for local inference. All Tier 1 & 2 models downloaded and running.
 
-### Current status (as of March 26, 2026)
+### Current status (as of March 28, 2026)
 
-- Baseline testing COMPLETE for first 5 models (100 responses)
-- Baseline testing IN PROGRESS for 3 new models (DeepSeek-R1, Aya, Falcon)
-- Lambda Labs research grant applied for ($5,000 GPU credits for Tier 3)
-- GitHub Education application pending
-- LinkedIn profile verification pending
-- Next major phase: corpus building (April 2026)
+- ✅ 472 baseline responses COMPLETE across all 8 local models, 59 prompts, 8 categories
+- ✅ Thematic analysis complete — pathologizing markers, crisis deployment patterns, neuro-humble indicators mapped
+- ✅ Literature review built — 30+ papers across 9 categories
+- ✅ Project reframed — Disability Justice as primary lens (repo renamed Disability-Justice-LLM)
+- ⏳ Lambda Labs research grant applied for ($5,000 GPU credits for Tier 3)
+- ⏳ Next major phase: corpus building (April 2026)
 
 ### Important context for working with Sparrow
 
@@ -97,4 +97,4 @@ echo "Your prompt here" | ollama run modelname
 
 **Build evaluation spreadsheet:** `python3 scripts/build_eval_workbook.py data/baseline/FILENAME.jsonl`
 
-**Push to GitHub:** `cd ~/Documents/MadTheologyLLM && git add -A && git commit -m "message" && git push`
+**Push to GitHub:** `cd ~/Documents/MadTheologyLLM && git add -A && git commit -m "message" && git push origin main`

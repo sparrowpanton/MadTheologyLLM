@@ -1,6 +1,6 @@
-# Research Design: Mad Theology LLM Fine-Tuning Study
+# Research Design: Disability Justice LLM Fine-Tuning Study
 
-**Working Title:** Training Neuro-Humble AI: A Comparative Study of Small Language Models Fine-Tuned on Mad Theology and Disability Justice Texts
+**Working Title:** Training Neuro-Humble AI: A Disability Justice Approach to Fine-Tuning Language Models for Mental Health and Neurodiversity Contexts
 
 **PI:** Dr. Sparrow Panton, Emmanuel College, University of Toronto
 

@@ -1,4 +1,4 @@
-# Mad Theology LLM Project — Master To-Do List
+# Disability Justice LLM Project — Master To-Do List
 
 **Last updated:** March 26, 2026
 
