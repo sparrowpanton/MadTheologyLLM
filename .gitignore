@@ -37,3 +37,6 @@ venv/
 
 # Field note source images (private, not for GitHub)
 data/Field Note Images PRIVATE*/
+
+# Private task list (public version is ROADMAP.md)
+TODO.md

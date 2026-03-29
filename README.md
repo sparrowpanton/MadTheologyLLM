@@ -233,7 +233,7 @@ This project is situated within three converging bodies of literature:
 
 **Where this project sits:** At the gap between these three camps. The establishment builds tools. The critical scholars theorize what's wrong. The Mad Studies tradition offers an alternative vision. This project brings all three together empirically — measuring the pathologizing defaults, and training models to embody something different.
 
-*For the full review, see [Voices from the Field: A Working Literature Review](LITERATURE_REVIEW.md).*
+*For the full review, see [Voices from the Field: A Working Literature Review](docs/LITERATURE_REVIEW.md).*
 
 ---
 

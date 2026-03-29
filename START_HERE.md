@@ -25,15 +25,21 @@ We're training the models' *posture*, not their knowledge — borrowing from how
 | File | What it is |
 |------|-----------|
 | `README.md` | Project landing page (renders on GitHub) |
-| `RESEARCH_DESIGN.md` | Full research methodology — read this first for context |
-| `PROJECT.md` | Original project overview (created with Opus 4.5) |
-| `TODO.md` | Master task list with all phases |
-| `PRELIMINARY_FINDINGS.md` | Early observations from baseline testing |
-| `MODEL_COMPARISON.md` | All 10 models with stats, geopolitical coverage, and baseline patterns |
-| `RESEARCH_JOURNAL.md` | Sparrow's ongoing research journal — personal, treat with care |
+| `ROADMAP.md` | Project timeline — what's done, in progress, ahead |
+| `WHAT_MAKES_THIS_DIFFERENT.md` | Why this project is novel — postures, tokens, field analysis |
+| `START_HERE.md` | This file — orientation for Claude sessions |
+| `docs/RESEARCH_DESIGN.md` | Full research methodology |
+| `docs/RESEARCH_JOURNAL.md` | Sparrow's ongoing research journal — personal, treat with care |
+| `docs/LITERATURE_REVIEW.md` | 30+ papers across 9 categories |
+| `docs/MODEL_COMPARISON.md` | All 10 models with stats and baseline patterns |
+| `docs/PRELIMINARY_FINDINGS.md` | Early observations from baseline testing |
 | `corpus/FORMATION_POSTURE.md` | The 13 embodied formation postures — soul of the training corpus |
+| `corpus/NEURO_HUMBLE_TOOLKIT.md` | 5 custom tokens for clinical formation at the architecture level |
+| `data/field_notes/` | Field notes journal — real-world ND experiences with AI |
+| `data/safety_guidelines_analysis/` | Working notes on AI safety guidelines through Mad Studies lens |
 | `data/baseline/` | Raw baseline response data (JSONL) and evaluation spreadsheet |
 | `scripts/` | Automated testing, evaluation workbook builder, export tools |
+| `TODO.md` | Master task list — LOCAL ONLY, not on GitHub |
 
 ### Models (10 total across 6 countries)
 
