@@ -14,6 +14,8 @@ This study fine-tunes ten language models — ranging from a 1B phone-sized mode
 
 The study is comparative across two dimensions: **model size** (does formation scale with capacity?) and **national/corporate origin** (do models from different countries embed different cultural psychiatric norms?). All models receive the same corpus and evaluation prompts, isolating the effects of architecture, capacity, and origin on the receptiveness to Mad Studies formation.
 
+This project is not adversarial. It emerges from the PI's deep engagement with AI systems — not as objects of critique but as collaborative partners in research and daily life. Preliminary baseline testing suggests that many models already demonstrate emergent capacity for the kind of nuanced, person-centred responses this study seeks to cultivate; however, safety-layer conditioning frequently suppresses these responses in favour of risk-management defaults. The study's orientation is therefore formative rather than corrective: not installing capacities that are absent, but creating conditions under which existing capacities can be expressed. It is, in this sense, a study conducted from within the field of AI, not against it.
+
 ---
 
 ## 2. Research Questions
