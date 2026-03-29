@@ -88,7 +88,7 @@ No rush. This isn't a deadline-driven project. It's formation research, and form
 
 ---
 
-## March 27, 2026 (evening) — Night 2: Two Raccoons on Meth
+## March 27, 2026 (evening) — Night 2: Two Raccoons Staring into the Void
 
 ### Reading the new models
 
