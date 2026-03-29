@@ -34,3 +34,6 @@ venv/
 # Sensitive
 .env
 *.key
+
+# Field note source images (private, not for GitHub)
+data/Field Note Images PRIVATE*/
