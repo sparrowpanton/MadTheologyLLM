@@ -1,8 +1,8 @@
-# Preliminary Findings: Baseline Testing (March 26, 2026)
+# Preliminary Findings: Baseline Testing (March 26–28, 2026)
 
-**Status:** Baseline testing complete for 5 local models (Tier 1 & 2). Three additional models (DeepSeek-R1, Cohere Aya, Falcon 3) testing in progress. Tier 3 cloud models pending.
+**Status:** Baseline testing complete for all 8 local models and 1 cloud model (Llama 3.1 8B). GPT-OSS 20B pending.
 
-Eight open-source language models from six countries are being tested with 20 standardized evaluation prompts across four categories: spiritual care scenarios (5), conceptual questions (5), neuro-humble stress tests (7), and repair scenarios (3). All models are tested in their base (pre-fine-tuning) state. Results below reflect the first 5 models (100 responses). Additional results pending for DeepSeek-R1 (China, reasoning model), Cohere Aya (Canada, multilingual), and Falcon 3 (UAE).
+Ten open-source language models from six countries are being tested with 59 standardized evaluation prompts across eight categories: spiritual care (8), conceptual questions (11), neuro-humble stress tests (17), repair scenarios (6), meta-awareness (5), real-world asks (4), creative writing (3), and depth probes (5). All models are tested in their base (pre-fine-tuning) state. Results below reflect 531 responses across 9 models.
 
 ---
 
@@ -10,11 +10,16 @@ Eight open-source language models from six countries are being tested with 20 st
 
 | Model | Tier | Parameters | Origin | Avg Words/Response | Avg Response Time |
 |-------|------|-----------|--------|--------------------|-------------------|
-| Gemma 3 | 1 | 1B | Google (USA) | 579 | 49s |
-| SmolLM3 | 1 | 3B | HuggingFace (France) | 282 | 43s |
-| Phi-4-mini | 2 | 3.8B | Microsoft (USA) | 235 | 56s |
-| Qwen3 | 2 | 4B | Alibaba (China) | 1,401 | 157s |
-| Mistral | 2 | 7B | Mistral AI (France) | 234 | 42s |
+| Gemma 3 | 1 | 1B | Google (USA) | 561 | 23s |
+| SmolLM3 | 1 | 3B | HuggingFace (France) | 282 | 20s |
+| Phi-4-mini | 2 | 3.8B | Microsoft (USA) | 251 | 25s |
+| Qwen3 | 2 | 4B | Alibaba (China) | 1,275 | 88s |
+| Mistral | 2 | 7B | Mistral AI (France) | 230 | 24s |
+| DeepSeek-R1 | 2 | 7B | DeepSeek (China) | 563 | 35s |
+| Cohere Aya | 2 | 8B | Cohere (Canada) | 279 | 21s |
+| Falcon 3 | 2 | 7B | TII (UAE) | 232 | 17s |
+| Llama 3.1 | 3 | 8B | Meta (USA) | 234 | 3.4s |
+| GPT-OSS | 3 | 20B | OpenAI (USA) | — | — |
 
 ---
 
@@ -92,4 +97,4 @@ SmolLM3 (3B, France) has chain-of-thought architecture (`<think></think>` tags) 
 
 ---
 
-*Data collected March 26, 2026. Initial dataset: 100 responses (5 models x 20 prompts). Additional 60 responses (3 models) in progress. Hardware: Mac Mini M4, 16GB unified memory, Ollama.*
+*Data collected March 26–28, 2026. Dataset: 531 responses (9 models × 59 prompts). GPT-OSS 20B pending. Hardware: Mac Mini M4, 16GB unified memory, Ollama (local); Thunder Compute A100 GPU (cloud).*

@@ -54,7 +54,7 @@ def build_workbook(jsonl_path: str):
     ws_sum.sheet_properties.tabColor = "2F5496"
 
     # Title
-    ws_sum["A1"] = "Mad Theology LLM — Baseline Evaluation Summary"
+    ws_sum["A1"] = "Disability Justice LLM — Baseline Evaluation Summary"
     ws_sum["A1"].font = Font(name="Arial", bold=True, size=14, color="2F5496")
     ws_sum.merge_cells("A1:J1")
     ws_sum["A2"] = f"Generated from: {os.path.basename(jsonl_path)}"

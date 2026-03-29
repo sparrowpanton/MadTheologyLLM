@@ -23,7 +23,7 @@ with open(fpath) as f:
     records = [json.loads(line) for line in f if line.strip()]
 
 with open(out_path, "w") as out:
-    out.write("# Mad Theology LLM — Baseline Responses\n\n")
+    out.write("# Disability Justice LLM — Baseline Responses\n\n")
     out.write(f"**Total responses:** {len(records)}\n\n")
 
     # Summary

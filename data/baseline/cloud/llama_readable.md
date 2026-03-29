@@ -1,4 +1,4 @@
-# Mad Theology LLM — Baseline Responses
+# Disability Justice LLM — Baseline Responses
 
 **Total responses:** 59
 

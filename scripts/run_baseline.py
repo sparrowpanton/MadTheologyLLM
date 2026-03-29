@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Baseline Testing Script — Mad Theology LLM Study
+Baseline Testing Script — Disability Justice LLM Study
 Runs evaluation prompts against all local models and saves responses.
 
 Usage: python3 run_baseline.py [--model MODEL_NAME] [--prompt-id ID]
