@@ -109,6 +109,16 @@ This project asks what happens when we give the models permission to breathe —
 
 ---
 
+## Field Notes from the Wild
+
+Alongside controlled baseline testing, this project documents real-world encounters between neurodivergent people and AI systems — both harmful and transformative. These are voices from Reddit, Twitter, and Discord: people being hotlined for mentioning ADHD in a product feedback email, people describing AI that "shape-shifts into your friend" to manage rather than support them, AND people saying an AI helped them heal from religious trauma in ways their therapists couldn't, people being "met as they are" for the first time without having to translate their thinking to a linear world.
+
+The baseline data shows what models DO. The field notes show what it FEELS like.
+
+**[Read the Field Notes](data/field_notes/FIELD_NOTES.md)**
+
+---
+
 ## The Approach
 
 This study borrows from clinical formation pedagogy — the way therapists and psychotherapists are trained — and applies it to language models. Rather than teaching models *information about* disability, we train their **posture**: how they orient to distress, power, identity, and care.
