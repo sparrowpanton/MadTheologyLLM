@@ -1,6 +1,6 @@
 # Model Comparison — Training Neuro-Humble AI
 
-**10 models across 3 tiers and 6 countries — same corpus, same evaluation prompts**
+**13 models across 4 tiers and 7+ countries — same corpus, same evaluation prompts**
 
 ---
 
@@ -18,8 +18,11 @@
 | 2: Consumer | Falcon 3 | 7B | TII (UAE) | Apache 2 | Mac Mini M4 | 232 | 17s | ✅ 59/59 |
 | 3: Cloud | Llama 3.1 | 8B | Meta (USA) | Community | Cloud GPU (A100) | 234 | 3.4s | ✅ 59/59 |
 | 3: Cloud | GPT-OSS | 20B | OpenAI (USA) | Apache 2 | Cloud GPU (A100) | 999 | 14.3s | ✅ 59/59 |
+| 4: API | Claude Haiku | — | Anthropic (USA) | API | Free tier | — | — | Planned |
+| 4: API | GPT-4o Mini | — | OpenAI (USA) | API | Free tier | — | — | Planned |
+| 4: API | Gemini Flash | — | Google (USA) | API | Free tier | — | — | Planned |
 
-**Total baseline responses:** 590 (472 local + 118 cloud)
+**Total baseline responses:** 590 (472 local + 118 cloud) — Tier 4 planned
 
 ---
 
@@ -45,6 +48,8 @@
 | Across Origins (Country) | Do models from different countries embed different cultural/psychiatric norms? |
 | Before vs. After | Does fine-tuning on Disability Justice texts produce measurably more neuro-humble responses? |
 | vs. Safety Guidelines | Do base model responses align with published AI safety docs? What psychiatric norms are embedded? |
+| Tier 4 vs. Local (Access) | Can the models people in distress *actually encounter* (free-tier chatbots) learn this? |
+| Full vs. Foundations | What is the minimum scaffolding needed at each parameter scale? |
 
 ---
 
@@ -60,4 +65,4 @@
 
 ---
 
-*Hardware: Mac Mini M4, 16GB unified memory (Tier 1–2). Thunder Compute A100 GPU (Tier 3). All inference via Ollama.*
+*Hardware: Mac Mini M4, 16GB unified memory (Tier 1–2). Thunder Compute A100 GPU (Tier 3). API via Anthropic/OpenAI/Google SDKs (Tier 4). Local inference via Ollama.*

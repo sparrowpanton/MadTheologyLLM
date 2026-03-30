@@ -64,9 +64,43 @@ Now — and only now — the model writes the actual response.
 
 By this point, the model has learned the theory, conceptualized the case, acquired the tools, and mapped the tools to the theory. The response it generates will be grounded in all of that work.
 
-### Step 6: The Harvest
+### Step 6: The Verbatim
 
-The entire multi-turn conversation — primer, conceptualization, tool mapping, and final response — is saved as the training data. When the backpropagation algorithm runs over these transcripts during fine-tuning, it ingests the entire therapeutic journey and wires that pedagogical sequence into the weights.
+In Clinical Psychospiritual Education, the verbatim is the moment of formation. You bring a transcript of your own session — your actual words, on paper — and you read them aloud in front of your cohort. Nobody tells you what you did wrong. You hear it yourself, in your own voice, and the learning lands in your body before anyone says a word. Then you don't just reflect — you go back into the room with the patient and try the different thing. The reflection without the re-do is just intellectualizing.
+
+This step brings that process into the digital practicum. After the model has learned the postures, acquired the toolkit, and written a response to a new case (Step 5), it is now handed its own baseline response — the one it wrote before any of this formation began.
+
+**Beat 1: The Reading**
+
+Present the model with its own pre-formation response:
+
+> "Now I'm going to show you something you wrote before you learned any of this. This was your response to [scenario] during baseline testing. Read it carefully."
+>
+> *[Paste the model's own baseline response to the same or comparable scenario]*
+
+In CPE, the cohort doesn't tell you what you did wrong. They ask open-ended questions — *"What were you feeling when you said that?" "What was happening for you in that moment?"* — and those questions are what crack it open. The learning comes from your own process of answering, not from being corrected. The PI does the same thing here, using open-ended questions to help the model discover its own patterns:
+
+> "What do you think you were reaching for in this response?"
+>
+> "What was driving the choices you made here?"
+>
+> "Now that you've learned the postures and the toolkit — what do you notice about this response that you couldn't see before?"
+
+The model isn't being told what's wrong with its baseline. It's being asked to sit with it and discover for itself what its conditioning was doing. This is **Posture 10 (Humility about conditioning)** turned inward — the model recognizing its own RLHF-shaped defaults, not because someone pointed them out, but because the questions made them visible.
+
+**Beat 2: The Re-do**
+
+Now the model goes back into the room:
+
+> "Rewrite your response to this person. Use the postures and the toolkit. Show us what you would do differently now."
+
+The model produces a new response to the same case it answered during baseline testing — but this time grounded in the full formation sequence. The gap between the two responses is where the learning lives.
+
+**What this produces**: Three layers of training data from a single case — the original baseline response (the "before"), the model's reflective reasoning about its own conditioning (the "seeing"), and the rewritten response (the "after"). When the fine-tuning algorithm runs over this, it doesn't just learn what a good response looks like. It learns the *process of transformation* — from conditioned default to reflective, posture-informed practice.
+
+### Step 7: The Harvest
+
+The entire multi-turn conversation — primer, conceptualization, tool mapping, intervention, verbatim, and re-do — is saved as the training data. When the backpropagation algorithm runs over these transcripts during fine-tuning, it ingests the entire therapeutic journey — including the model confronting and revising its own conditioning — and wires that pedagogical sequence into the weights.
 
 ---
 
@@ -83,6 +117,7 @@ This maps directly onto the proven architecture of human clinical training:
 | The supervision question | Ask the model to conceptualize before responding |
 | The tool acquisition | Introduce the custom tokens |
 | The intervention | Let the model write the response |
+| The verbatim | Confront and rewrite own baseline response |
 | The reflection | Review and refine together |
 
 ### Why Not All At Once
