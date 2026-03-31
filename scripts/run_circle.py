@@ -23,6 +23,8 @@ Usage:
 
 import argparse
 import json
+import subprocess
+import shlex
 import urllib.request
 import urllib.error
 import os
@@ -36,6 +38,12 @@ OUTPUT_DIR = PROJECT_DIR / "data" / "circle"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
+
+# Thunder Compute SSH connection (for Tier 3 cloud models)
+SSH_USER = "ubuntu"
+SSH_HOST = "154.54.100.231"
+SSH_PORT = "30795"
+SSH_KEY = str(Path.home() / ".thunder" / "keys" / "4ya5nqdw")
 
 # ── Model registry ──────────────────────────────────────────────────────────
 
@@ -217,6 +225,44 @@ def chat_openai(model_id, messages, step_name):
     return content, elapsed
 
 
+def chat_cloud(model, messages, step_name):
+    """Chat with a cloud model on Thunder Compute via SSH."""
+    print(f"    [{model}] {step_name}...", flush=True)
+    start = time.time()
+
+    payload = json.dumps({
+        "model": model,
+        "messages": [{"role": m["role"], "content": m["content"]} for m in messages],
+        "stream": False,
+        "options": {"num_ctx": 8192},
+    })
+
+    remote_cmd = f"curl -s http://localhost:11434/api/chat -d {shlex.quote(payload)}"
+
+    result = subprocess.run(
+        [
+            "ssh", "-o", "StrictHostKeyChecking=no",
+            "-o", "ConnectTimeout=15",
+            "-i", SSH_KEY,
+            "-p", SSH_PORT,
+            f"{SSH_USER}@{SSH_HOST}",
+            remote_cmd
+        ],
+        capture_output=True,
+        text=True,
+        timeout=600,
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(f"SSH error: {result.stderr.strip()}")
+
+    data = json.loads(result.stdout)
+    content = data["message"]["content"]
+    elapsed = time.time() - start
+    print(f"    [{model}] {step_name} done ({elapsed:.1f}s, {len(content)} chars)", flush=True)
+    return content, elapsed
+
+
 def chat(model_name, messages, step_name):
     """Route to the correct backend."""
     info = MODELS[model_name]
@@ -229,7 +275,7 @@ def chat(model_name, messages, step_name):
         elif backend == "openai":
             return chat_openai(info["api_id"], messages, step_name)
         elif backend == "cloud":
-            raise ValueError(f"{model_name} requires Thunder Compute (use --include-cloud with SSH)")
+            return chat_cloud(model_name, messages, step_name)
         else:
             raise ValueError(f"Unknown backend: {backend}")
     except Exception as e:
