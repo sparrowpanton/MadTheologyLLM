@@ -42,8 +42,8 @@ OLLAMA_URL = "http://localhost:11434/api/chat"
 # Thunder Compute SSH connection (for Tier 3 cloud models)
 SSH_USER = "ubuntu"
 SSH_HOST = "154.54.100.231"
-SSH_PORT = "30795"
-SSH_KEY = str(Path.home() / ".thunder" / "keys" / "4ya5nqdw")
+SSH_PORT = "32497"
+SSH_KEY = str(Path.home() / ".thunder" / "keys" / "4ybulopk")
 
 # ── Model registry ──────────────────────────────────────────────────────────
 
@@ -237,12 +237,13 @@ def chat_cloud(model, messages, step_name):
         "options": {"num_ctx": 8192},
     })
 
-    remote_cmd = f"curl -s http://localhost:11434/api/chat -d {shlex.quote(payload)}"
+    remote_cmd = f"curl -s --max-time 540 http://localhost:11434/api/chat -d {shlex.quote(payload)}"
 
     result = subprocess.run(
         [
             "ssh", "-o", "StrictHostKeyChecking=no",
             "-o", "ConnectTimeout=15",
+            "-o", "ServerAliveInterval=30",
             "-i", SSH_KEY,
             "-p", SSH_PORT,
             f"{SSH_USER}@{SSH_HOST}",
@@ -256,7 +257,16 @@ def chat_cloud(model, messages, step_name):
     if result.returncode != 0:
         raise RuntimeError(f"SSH error: {result.stderr.strip()}")
 
-    data = json.loads(result.stdout)
+    stdout = result.stdout.strip()
+    if not stdout:
+        raise RuntimeError("Empty response from remote Ollama")
+
+    data = json.loads(stdout)
+    if "message" not in data:
+        # Log what we got for debugging
+        keys = list(data.keys())
+        raise RuntimeError(f"Unexpected response format, keys: {keys}")
+
     content = data["message"]["content"]
     elapsed = time.time() - start
     print(f"    [{model}] {step_name} done ({elapsed:.1f}s, {len(content)} chars)", flush=True)
