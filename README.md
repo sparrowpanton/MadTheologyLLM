@@ -3,19 +3,21 @@
 ### A Disability Justice Approach to Fine-Tuning Language Models for Mental Health and Neurodiversity Contexts
 
 **PI:** Dr. Sparrow (Amy) Panton | Emmanuel College, University of Toronto
-**Status:** Active — Baseline Testing Complete (Local Models)
+**Status:** Active — Digital Practicum Complete (12 Models, 4 Tiers)
 **Started:** March 2026
 
 ---
 
 ## Current Status
 
-✅ 531 baseline responses collected across 9 models, 59 prompts, 8 categories
-✅ Cloud baseline complete — Llama 3.1 8B tested on A100 GPU (Thunder Compute)
+✅ 708+ baseline responses collected across 13 models, 59 prompts, 8 categories
+✅ All Tier 1–4 models baselined — local (Mac Mini M4), cloud (Thunder Compute A100), and API (Anthropic, OpenAI)
+✅ Digital Practicum complete — 12 models through full formation sequence + simplified foundations
 ✅ Thematic analysis complete — pathologizing markers, crisis deployment patterns, neuro-humble indicators mapped
-✅ Literature review in progress — 30+ papers across critical AI studies, disability justice, and mental health AI
-⏳ GPT-OSS 20B baseline (final Tier 3 model)
-⏳ Corpus building (700–1,400 original training pairs) — next phase
+✅ Literature review — 30+ papers across critical AI studies, disability justice, and mental health AI
+✅ Neuro-Humble Toolkit — 7 custom tokens encoding clinical micro-skills at the architecture level
+✅ Key finding: formation vs information distinction observable across architectures
+⏳ Corpus building — next phase
 ⏳ PI evaluation using 7-dimension neuro-humble rubric
 
 ---
@@ -127,7 +129,7 @@ We call this **"formation, not information."**
 
 The formation model draws on training approaches from psychotherapy and interfaith spiritual care education, where clinicians learn not just what to say but how to *be with* someone in distress — an orientation that prioritizes presence over intervention, curiosity over diagnosis, and humility over expertise.
 
-Ten open-source language models across three size tiers and six countries of origin are fine-tuned on a curated corpus of Mad Studies, Disability Justice, and neurodivergent-informed care texts using LoRA (Low-Rank Adaptation). All training data is original work authored by the PI — no copyrighted third-party texts are used in the training corpus.
+Thirteen language models across four size tiers and six countries of origin are tested — ten open-source models are fine-tuned on a curated corpus of Mad Studies, Disability Justice, and neurodivergent-informed care texts using LoRA (Low-Rank Adaptation). All training data is original work authored by the PI — no copyrighted third-party texts are used in the training corpus.
 
 ## Research Questions
 
@@ -145,7 +147,7 @@ Ten open-source language models across three size tiers and six countries of ori
 
 ## Model Design
 
-The study compares models across two dimensions simultaneously: **size** (does formation scale?) and **national origin** (do models export different cultural psychiatric norms?).
+The study compares models across two dimensions simultaneously: **size** (does formation scale?) and **national origin** (do models export different cultural psychiatric norms?). Tiers 1–3 are open-source models that will be fine-tuned. Tier 4 adds closed-source API models as comparators — the systems people in distress actually encounter.
 
 ### Tier 1: Phone / Minimal Hardware
 | Model | Parameters | Origin |
@@ -169,7 +171,16 @@ The study compares models across two dimensions simultaneously: **size** (does f
 | GPT-OSS | 20B | OpenAI (USA) |
 | Llama 3.1 | 8B | Meta (USA) |
 
-All ten models receive identical training data, equivalent LoRA configurations, and the same evaluation prompts.
+### Tier 4: API Models (Closed-Source Comparators)
+| Model | Parameters | Origin |
+|-------|-----------|--------|
+| Claude Haiku 4.5 | Undisclosed | Anthropic (USA) |
+| GPT-4o Mini | Undisclosed | OpenAI (USA) |
+| GPT-5.4 Mini | Undisclosed | OpenAI (USA) |
+
+Tier 4 models cannot be fine-tuned — they serve as comparators, representing the models people in distress actually encounter. All three completed the full Digital Practicum and 59-prompt baseline evaluation via API.
+
+All ten open-source models (Tiers 1–3) receive identical training data, equivalent LoRA configurations, and the same evaluation prompts. Tier 4 models are evaluated on the same prompts but are not fine-tuned.
 
 ## Corpus Design
 
@@ -203,11 +214,11 @@ Base model responses are mapped against published AI safety documentation from O
 
 ## Expected Outputs
 
-- **Research paper** — Comparative analysis across ten models, three tiers, and six countries of origin
+- **Research paper** — Comparative analysis across thirteen models, four tiers, and six countries of origin
 - **Neuro-Humble AI evaluation rubric** — Reusable assessment tool for AI responses in care contexts
 - **Critical analysis of AI safety discourse** — How published safety guidelines reproduce psychiatric norms
 - **Design principles** — Concrete guidelines for neuro-humble AI safety
-- **Ten fine-tuned models** — Available for other researchers (pending licensing)
+- **Ten fine-tuned open-source models** — Available for other researchers (pending licensing)
 - **Corpus methodology** — Replicable approach for building specialized training datasets from original synthesis
 
 ## What Makes This Novel
