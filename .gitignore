@@ -40,3 +40,6 @@ data/Field Note Images PRIVATE*/
 
 # Private task list (public version is ROADMAP.md)
 TODO.md
+
+# Claude Code config (local to each machine)
+.claude/
