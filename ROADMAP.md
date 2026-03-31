@@ -19,7 +19,13 @@
 - Designed the Digital Practicum — artisanal pedagogical workflow for corpus building, including the Verbatim step (models confront their own baselines)
 - Ran first practicum sessions: all 8 local models through full 7-step sequence + simplified Foundations version
 - Key finding: simplified single-posture scaffolding dramatically outperforms full sequence — models that completely failed the full Verbatim could self-reflect when given one posture at a time
-- Added Tier 4 (API models: Claude Haiku, GPT-4o Mini, Gemini Flash) to test models people in distress actually encounter
+- Added Tier 4 (API models) to test models people in distress actually encounter
+- Completed Tier 3 practicum: Llama 3.1 8B and GPT-OSS 20B on Thunder Compute A100 — both handled full 13-posture sequence with zero errors
+- Completed Tier 4 practicum: Claude Haiku 4.5, GPT-4o Mini, GPT-5.4 Mini — all through full practicum + foundations with baselines and Verbatim
+- Collected 177 new baseline responses (59 each for Claude Haiku, GPT-4o Mini, GPT-5.4 Mini)
+- Key finding: formation vs information distinction observable across architectures — Haiku 4.5 *inhabited* the postures (caught own countertransference, pushed back on researcher), GPT-5.4 Mini *applied* them correctly but remained in analyst mode
+- Hardware hypothesis identified: Llama 3.1 8B (same size as local models that choked) handled full practicum on A100 — may be hardware constraint, not model capacity
+- Total: 13 models across 4 tiers, 708+ baseline responses, 12 models through Digital Practicum
 
 ---
 
@@ -27,7 +33,8 @@
 
 **Late March / Early April 2026 — Practicum Completion + Corpus Building**
 
-- Practicum sessions for Tier 3 (Llama 8B, GPT-OSS 20B on Thunder Compute) and Tier 4 (API models)
+- ~~Practicum sessions for Tier 3 and Tier 4~~ DONE
+- Hardware hypothesis test: re-run local 7-8B model on A100 to determine if full practicum failure was hardware or model capacity
 - Workflow 2 (The Circle): peer learning across models
 - Writing training pairs using baseline responses as raw material
 - Three layers: foundational texts (PI's own published work), applied formation (case studies), field synthesis (Mad Studies and Disability Justice concepts)
