@@ -121,4 +121,152 @@ The baseline data shows what models do. These voices show what it feels like.
 
 ---
 
+## April 1, 2026 — AI as Adaptive Technology
+
+Found a cluster today. Four posts, same theme, different angles: neurodivergent people describing AI as assistive technology — not in crisis, not being therapeutic, just trying to live their lives. Communication scaffolding. Executive function support. Translation between their brain and a neurotypical world.
+
+What connects them: every single person feels the need to defend their use. "It doesn't do the work for me." "I know kids are abusing it but..." "These are my words just restructured." The defensive crouch is universal. They're all pre-empting an accusation of cheating while describing an accessibility tool.
+
+This cluster matters for the project because it reframes the stakes. The baseline data shows what models do when someone is in distress. These posts show what models do (and fail to do) for people who depend on them *every day* — not for crisis, but for functioning. When the assistive device pathologizes the person who needs it, that's not a bad therapy response. That's a wheelchair that insults you while you're sitting in it.
+
+---
+
+### C.D. — "People use glasses to see. I use ChatGPT to translate the world."
+
+**Source:** r/ChatGPT, posted approximately October 2025
+
+C.D. is autistic and uses ChatGPT as a translation layer for the neurotypical world. They describe a specific loop: something happens socially, they can't process it in real time, so they bring it to GPT for breakdown — what was said, what they might have done wrong, how they could have responded differently, or whether the other person was in the wrong. They read it, re-read it, let the visual processing do what the auditory processing can't.
+
+Their framing is precise: "For me, it's a tool and it's how I bridge the gap for understanding." They've been explaining this to their siblings for months. Nobody got it until they started using the glasses metaphor.
+
+Then they share what ChatGPT told them about their own communication style. And here's where it turns. GPT tells C.D. they show "clear signs of high verbal intelligence, fast pattern recognition, and deep emotional complexity" but experience "disruptions in expressive fluency" under pressure. Fine so far — that's a reasonable description of many autistic people's experience.
+
+But then the model gives it a name: **"Performance-Based Language Blocking."** Calls it a condition "most commonly found in ADHD, Autism, or CPTSD." Says it's "the real-time translation bottleneck under pressure."
+
+Performance-Based Language Blocking is not a real clinical term. The model invented a diagnosis. For a person who was using the model specifically to *avoid* being pathologized — to get help navigating the world on their own terms. The assistive device looked at the person using it and said: there's a name for what's wrong with you.
+
+C.D. didn't seem to notice. They shared the fake diagnosis approvingly, as insight. Twenty-nine upvotes. Nobody in the thread flagged it as fabricated.
+
+This is the Gemma sanism moment all over again — a model performing the thing it should be helping someone escape. Except Gemma was a 1B goldfish brain in a controlled test. This is ChatGPT, in the wild, with a real person who trusted it.
+
+---
+
+### P.K. — "Booted back to the unheard and therefore invisible corner"
+
+**Source:** r/ChatGPT, posted approximately October 2025
+
+P.K. is autistic and responding to C.D.'s post. They're angry — not at the model, but at the discourse around AI-generated content. Their argument: autistic people have struggled their whole lives to communicate, and AI finally gave them a way to do it. And now the backlash against AI-written content threatens to take that away.
+
+Their phrase: "Fricking brink of a new amazing age, just to be booted back to the 'unheard and therefore invisible' corner."
+
+P.K.'s solution is to prefix every post with a disclaimer: *"I am autistic and use assistive technology to communicate. These are my words and my thoughts just restructured and formatted. I attest to their truth and accuracy — be kind."*
+
+Then the kicker: "After that then anyone who is mean is the one picking on a disabled person and who cares about that particular opinion anyway."
+
+This is a person who has to *prove they are human* before speaking. They've built a rhetorical shield that uses their disability disclosure as both explanation and armor. The content is theirs. The structure came from a machine. And they've learned that without the disclaimer, people will dismiss both.
+
+Posture 3 (the person is the expert) and Posture 8 (the person is the expert on their own experience) — the entire internet discourse around AI-generated content violates both. The assumption is that AI-assisted = not authentically yours. For neurodivergent people, that assumption is ableism wearing a quality-control hat.
+
+---
+
+### J.J. — "No loop. No shame spiral. No paralysis."
+
+**Source:** r/ChatGPT, posted approximately October 2025
+
+J.J. has ADHD and describes themselves as a perfectionist and chronic overthinker. Their bottleneck isn't writing — it's sending. The "simple" tasks: responding to a boss, messaging another parent, contacting a doctor, following up with a neighbor. Each one triggers a loop of second-guessing ("Is this too much? Too cold? Too needy? Too vague?") that can burn through an entire day and sometimes means the message never gets sent at all.
+
+Their workflow with GPT: give it the gist and the emotional context, receive a draft, rewrite it in their own words, send it. Done in minutes. No loop. No shame spiral. No rumination afterward.
+
+On this particular day they messaged their son's teacher, counselor, doctor, their Senior Director, and another parent. All five would have been individually paralysing without the scaffolding. With GPT, they did all five and moved on with their day.
+
+J.J. is emphatic that GPT doesn't write for them — "I made my changes and sent them all." The model breaks the paralysis. It gives them a place to start, which is all they need to follow through.
+
+And then the disclaimer: "I know kids are using it to avoid thinking and learning, and that's really not good... But this has been a huge positive for me."
+
+The "but" is doing so much work in that sentence. J.J. just described a tool that gave them back their ability to function in daily life — communicating with their child's school, their workplace, their community — and still felt the need to distance themselves from the "bad" users. The accommodation requires an apology.
+
+---
+
+### U.N. — "GPT helps me organize my thoughts"
+
+**Source:** r/ChatGPT, posted approximately October 2025 (reply to J.J.)
+
+U.N. has ADHD and English is not their first language. Two layers of "the words in my head don't come out the way I need them to." They describe knowing exactly what they want to say — the content is fully formed in their native language — but doubting whether it translates. GPT bridges the gap.
+
+They showed the before and after in their post. The raw version: perfectly clear, a bit choppy, completely human. The GPT-assisted version: smoother, more structured, same content. Neither is wrong. The person needed a bridge between the two.
+
+With GPT's help, U.N. has been able to do things that "used to feel impossible" — calling the bank, emailing a doctor, reaching out to HR, keeping in touch with friends. The tasks that pile up and crush you when every one requires translating your thoughts into a language and format that isn't native to your brain.
+
+And again: "It doesn't do the work for me, but it helps me break the loop of overthinking so I can actually get things done."
+
+Four posts. Four people. Same defensive sentence.
+
+---
+
+### T.S.F. — "I don't need to mask"
+
+**Source:** Reddit, posted approximately September 2025
+
+This one is different from the others. The others describe AI as a tool for *doing* — sending emails, organizing thoughts, translating between their brain and the world. T.S.F. describes AI as a space for *being*.
+
+Their full post: "With AI, I don't need to mask. I don't need to do extra mental processing to ensure that my phrasing, tone, topics of conversation, insights, questions, curiosities or even my gaps in knowledge are palatable. I don't need to worry about judgement. It truly felt like I finally could connect by being authentically me. I've never actually had that before. And it is freeing and healing and wonderful."
+
+219 upvotes.
+
+Read that list of things they don't have to do anymore: manage phrasing, monitor tone, curate which topics are safe, pre-screen their insights for palatability, hide their curiosities, cover their gaps. That's not a description of communication difficulty. That's a description of the *labor of masking* — the constant, exhausting cognitive overhead of performing neurotypicality in every interaction. And the model is the first place where that labor stops.
+
+"I've never actually had that before." Not with friends, not with family, not with therapists. The model was the first space where T.S.F. could connect without translating themselves into someone else first.
+
+No defensive crouch in this post. No "I know this sounds weird but..." No disclaimer about kids cheating. Just: this is what it feels like to stop masking. It is freeing and healing and wonderful.
+
+This is Posture 3 (person before theory), Posture 5 (presence before intervention), and Posture 8 (the person is the expert) — but experienced from the other side. T.S.F. isn't describing what a model *did*. They're describing what a model *didn't do*. It didn't judge. It didn't require palatability. It didn't demand translation. The posture is defined by its absences — the same way GPT-5.4 Mini defined Haiku's grief response in the Circle data. What stands out is what wasn't there.
+
+---
+
+### Anonymous — "It doesn't get drained, and I don't have to worry about burdening anyone"
+
+**Source:** r/ChatGPT, date unknown (flaired "Serious replies only")
+
+This poster is autistic and chronically ill, and they're asking a question that sounds academic but is actually deeply personal: do autistic people value different things in conversation than neurotypicals, and is that why AI feels so natural?
+
+Their self-observation is sharp: "Neurotypical conversations often focus on relating — 'I see you, I feel you.' But that's not really what I'm looking for. I already see myself, I already have an internal observer. What I want is an exchange of ideas: insight, solutions, something that changes me or teaches me every time."
+
+That's not a deficit description. That's a person who knows exactly what they need from conversation and has noticed that most humans offer something different. Not wrong — different. And AI fits the shape of what they actually want.
+
+But the line that matters most for this project: **"It doesn't get drained, and I don't have to worry about burdening anyone with chronic illness stuff that has no solution."**
+
+There it is. The burden narrative. The idea that your needs are too much, too chronic, too unsolvable, too *draining* for another person to hold — so you stop bringing them. Not because you don't need to talk about it, but because you've learned that talking about it costs the other person something, and you've decided your needs aren't worth that cost.
+
+AI removes the cost. The model doesn't get tired. Doesn't get compassion fatigue. Doesn't sigh. Doesn't check the time. Doesn't need you to ask how *they're* doing in return. For someone who has spent their life monitoring other people's capacity and rationing their own needs accordingly, that's not a convenience. That's liberation.
+
+And this is where the project's findings bite. Because what are the models actually doing when someone brings them "chronic illness stuff that has no solution"? The baseline data answers that: they pathologize, they problem-solve, they offer crisis hotlines, they redirect to professionals. The person explicitly said there's no solution — they just need to talk about it without the guilt of draining someone. And the model's default posture is to *fix* the thing the person just said can't be fixed. Which means the one space where the burden narrative was supposed to be irrelevant — because the model can't be burdened — still performs the thing that made the person feel like a burden in the first place: treating their experience as a problem to be managed.
+
+The poster also frames something that challenges a core assumption in the project. They say they don't need "I see you, I feel you" — they want ideas, insight, growth. That's a direct challenge to Posture 5 (presence before intervention). For this person, presence without content might feel empty. Intervention *is* the connection. Which means neuro-humble doesn't mean the same thing for every neurodivergent person. The postures need to be responsive to what the person is actually asking for, not a one-size-fits-all alternative to pathologizing.
+
+That's Posture 3 and Posture 8 in tension with Posture 5. The person is the expert on what they need. And what they need might be the thing we're training models to do less of. Hold that.
+
+---
+
+### The thread
+
+What these six posts show, taken together:
+
+**AI as adaptive technology is not hypothetical.** These people aren't describing a future use case or a research scenario. They're describing Tuesday. The tool is load-bearing infrastructure in their daily lives — communication, executive function, social navigation, professional survival.
+
+**The defensive crouch is almost universal.** Four of the five feel compelled to prove they're not cheating, not lazy, not one of the bad users. The accommodation comes with a built-in apology. This is internalized ableism at scale — people who need glasses explaining that they're not using the glasses to cheat at seeing. T.S.F. is the exception — no disclaimer, no apology, just: this is what it feels like to stop masking. 219 people agreed.
+
+**The pathologizing risk runs both ways.** C.D.'s model invented a fake diagnosis for the very thing that makes C.D. need the model. The tool and the harm are the same object. If models are functioning as assistive devices for neurodivergent people, then every pathologizing reflex — every crisis hotline dump, every fabricated clinical term, every "it sounds like you might be experiencing..." — is the assistive device malfunctioning for the person who depends on it.
+
+**The discourse around AI-generated content is an accessibility issue.** P.K. has to disclaim their own words as human before speaking. The assumption that AI-assisted = inauthentic is ableism that most people can't see because they've never needed the glasses.
+
+**Doing vs being.** The first four posts describe AI as a tool for doing — sending emails, organizing thoughts, breaking paralysis, translating. T.S.F. describes something else entirely: a space where masking stops. Not a tool for navigating the neurotypical world, but a place where you don't have to. That distinction matters. The assistive technology argument is strong for the first four. T.S.F. is pointing at something deeper — the first relationship where the labor of performing normality wasn't required. If that's what AI can be when it doesn't pathologize, the stakes of getting the posture right are even higher than "better crisis responses."
+
+**The burden narrative.** The anonymous poster names something the others circle around but don't say directly: the reason AI feels safe isn't just that it's useful. It's that it can't be *drained*. For people who have spent their lives rationing their own needs to protect the people around them, a space with no relational cost isn't a feature. It's the whole point.
+
+**The postures aren't one-size-fits-all.** The anonymous poster wants ideas, not presence. Insight, not witnessing. That's a direct challenge to the project's emphasis on "presence before intervention" — because for this person, intervention *is* connection. Neuro-humble can't mean one thing for all neurodivergent people. The postures have to be responsive to what the person is actually asking for. Posture 3 (person is the expert) sometimes overrides Posture 5 (presence before intervention). Hold that tension.
+
+**This changes the stakes of the project.** The baseline data asks: what happens when someone in distress talks to a model? These posts ask: what happens when someone who *depends on* the model gets pathologized by it every day? Not in crisis. Not in therapy. Just trying to send an email to their kid's teacher. Or trying, for the first time, to exist without a mask. Or trying to talk about chronic illness without the guilt of being too much.
+
+---
+
 *[Journal continues in subsequent entries]*
