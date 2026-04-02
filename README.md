@@ -19,7 +19,13 @@
 ✅ Neuro-Humble Toolkit CLI — interactive three-track training wizard (Practicum, Tape Review, Synthesizer)
 ✅ Literature review — 30+ papers across critical AI studies, disability justice, and mental health AI
 ✅ Key finding: formation vs information distinction observable across architectures — Haiku 4.5 *inhabited* postures while GPT-5.4 Mini *applied* them correctly but remained in analyst mode
-⏳ Corpus building — next phase (700–1,400 training pairs)
+✅ Sonnet Circle Analysis — model-reading-models reflection on all 14 peer supervision sessions
+✅ Formation-based training pipeline designed — dialogical seeds, supervisor training manual, tiered developmental curriculum
+✅ Supervisor session script built — Anthropic API supervisors teaching local Ollama students through live conversation
+✅ First trial sessions complete — Sonnet teaching Gemma 1B reflect_back and hold_space through 15-turn dialogue. Key finding: Gemma 1B engaged in genuine formation through patient dialogue despite prior assessment that 1B models could not be formed
+⏳ Run full supervisor sessions across all Tier 1 and Tier 2 models
+⏳ Write Tier 2 seed pairs (using tokens in complex scenarios)
+⏳ Corpus building — target 500–2,000 training pairs via dialogical Self-Instruct
 ⏳ PI evaluation using 7-dimension neuro-humble rubric
 
 ---
