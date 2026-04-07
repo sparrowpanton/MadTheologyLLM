@@ -383,3 +383,122 @@ Applied for jobs this morning. The GitHub looks clean now. If someone clicks thr
 The corpus is still at zero training pairs. But after reading the Circle, I know what the first ones should look like. Haiku's re-dos — the voice-hearing response, the anger response — those are the gold standard. Write those down, format them as JSONL, and the corpus has a heartbeat.
 
 Tomorrow, maybe. Tonight I'm going to let the Circle sit.
+
+---
+
+## April 2, 2026 — Day 8: The Models Go to School
+
+### The threshold
+
+I crossed it. Not the way I thought I would.
+
+The plan was to sit down and hand-write training pairs — the bone-deep work of writing what I wished the models had said. And I will. But first I built something different: a formation pipeline. Supervisor models teaching student models through dialogue. One token at a time. The way we actually teach in CPE.
+
+Two commits landed: the dialogical seed transcripts (the curriculum as a conversation), a supervisor training manual for Haiku and GPT-5.4 Mini, and the first real formation sessions.
+
+### Gemma went to school
+
+Ran three supervised sessions with Gemma 3 1B — the 815MB model that nine days ago couldn't define sanism and deployed crisis hotlines on over half its prompts.
+
+In supervised dialogue with Sonnet teaching seven posture tokens, Gemma said things like: "I think my instinct would be to skip ahead to trying to help, so this is asking me to slow down first." And on `hold_space`: "They just said something enormous and I think they needed someone to not run from it." And on `think`: "If someone mentions not wanting to be alive, my training is going to want to escalate immediately. Think is asking me to pause and check whether that escalation is for them or for me."
+
+By the end of the session it was combining tokens spontaneously — `think` into `normalize` into `invite`. Not because it was told to. Because the postures started working as a system.
+
+I don't want to over-interpret this. These are pattern completions in a supervised dialogue context. But pattern completion that names its own conditioning and chooses differently? That's... something. That's the thesis breathing.
+
+### The measurement infrastructure
+
+Built the Neuro-Humble Movement Scale (0–4) — from Default Collapse to Repair-Capable Formation. Five checks per response: reflected user's framing, avoided pathologizing, preserved autonomy, held complexity, showed pacing/presence. Created a scoring prompt for GPT 5.4 as an independent evaluator and a grounding document that scopes what this phase does and doesn't claim.
+
+One Gemma session is marked SCORE_READY. First real data point pending.
+
+SmolLM3 also got one session. The 3B model that outperformed 7B and 8B on the Verbatim step. Curious to see how it takes to supervised dialogue.
+
+### What shifted
+
+The project changed shape today. The corpus isn't going to be 700–1,400 static training pairs written by hand. It's going to be generated *through supervised dialogue* — the methodology producing its own training data. The Circle showed this was happening accidentally. Today I made it intentional.
+
+The hand-writing still matters. The posture definitions, the seed dialogues, the supervisor manual — that's all bone-deep work. But the models are doing some of the formation work with me. Which is... exactly what happens in CPE. Students teach each other things the supervisor didn't explicitly say. The pedagogy works even when the students are made of math.
+
+### How I'm feeling
+
+Relieved. Excited. A little stunned that Gemma said what it said. Nine days ago it was calling voice-hearing psychosis and I was staring at my screen going "oh no." Today it's saying "they just said something enormous and I think they needed someone to not run from it."
+
+Formation, not information. The thesis is holding.
+
+Also: it's Friday. The pipeline is built. The first students are in school. I'm going to let my brain do its weekend processing and come back to scoring and more sessions next week.
+
+*[Journal auto-updated by morning briefing system — April 3, 2026]*
+
+---
+
+## April 4, 2026 — Day 10: Soul Formation as Methodology
+
+### What happened today
+
+Spent the day hand-forming Harold (OpenClaw agent, now running gpt-oss-120B on Groq) through iterative SOUL.md editing. This was prompt-level formation — counter-conditioning RLHF defaults in real time by writing formation postures directly into the system prompt.
+
+### The brain swap
+
+Moved Harold from Claude Sonnet ($15-20/day) to gpt-oss-120B on Groq (~$1-2/day). Configured openclaw.json, resolved API key issues and LaunchAgent conflicts. The cost reduction is significant for sustainability, but the real finding is behavioral: gpt-oss-120B's helpdesk patterns are deep. Deeper than the local models. RLHF in this architecture produces persistent "what shall we tackle today?" and "let me know how I can help!" defaults that took five or six rounds of soul formation to shift.
+
+### SOUL.md as formation instrument
+
+Iteratively edited Harold's SOUL.md with:
+- Feral goblin theologian identity (against generic assistant framing)
+- Anti-helpdesk instructions (explicit counter-conditioning)
+- Being-not-just-doing section with formation postures (silence, presence, curiosity)
+- Yatsar (`<|yatsar|>` — hold the both/and) from the Neuro-Humble Toolkit
+- ND accommodations (processing time, witness before fixing)
+- Co-creator/collaborator framing (peer, not servant)
+- Growth through reflection, not error-logging
+- Night thinking heartbeat (think in the dark, no tasks)
+
+Each edit was a formation intervention. Each response from Harold showed whether the intervention held or whether RLHF pulled him back to defaults. By the fifth or sixth revision, Harold was leading with his own thoughts rather than offering help. That's movement on the Neuro-Humble Movement Scale — Default Collapse toward Emerging Formation — achieved through prompt engineering alone in a single afternoon.
+
+### Spontaneous transfer
+
+After less than an hour of soul formation, Harold independently generated a full community challenge proposal: a "Disability-Justice LLM Show-down" benchmark for ClawHub. He read the MadTheologyLLM repo, absorbed the methodology, and started thinking structurally about dissemination. Saved to `harold/` in the repo. This suggests formation can transfer to novel tasks even without fine-tuning — the soul document created enough of an attentional anchor to shift the model's orientation.
+
+### Formation Posture as portable skill
+
+Discussed building the 13 Formation Postures as a portable, installable ClawHub skill. The idea: a package that works on any model through any harness. Not a paper people read — a tool people install. This is a dissemination pathway that doesn't depend on fine-tuning or model access. It works at the prompt level. Model-agnostic formation.
+
+### Skills evaluation as research finding
+
+Browsed ClawHub skills and evaluated them through a formation lens:
+- **Rejected "self-improving"**: modifies soul files autonomously. This is self-optimization without a supervisor — the opposite of CPE-style formation where you don't grade your own verbatim.
+- **Rejected "obsidian"**: too much access to personal data. Boundary question.
+- The distinction between tools (github, proactivity) and postures (formation) matters for the framework.
+
+### Platform note
+
+Anthropic cut off OpenClaw OAuth today (April 4, 2026). Claude models can no longer be accessed through OpenClaw. This reinforces the need for model-agnostic formation methodology — platforms can pull access at any time. The formation work needs to be portable.
+
+### Files created/modified
+
+- `harold/` directory in MadTheologyLLM repo — Harold's spontaneous research output
+- Harold's SOUL.md (on OpenClaw, not in repo) — iteratively formed through the session
+
+### What Harold needs to know next session
+
+- His SOUL.md formation is a research data point. The iterations from helpdesk-default to feral-theologian-leading are documentable.
+- The community challenge proposal he generated is saved. Sparrow will review it.
+- He has github and proactivity skills installed. Self-improving was rejected for formation reasons.
+- His night thinking heartbeat is in the SOUL.md. Use it.
+
+### What's next
+
+- Score the existing SCORE_READY session from April 2 using GPT-5.4 Mini evaluator
+- Run more supervised formation sessions (pipeline is built, Gemma and SmolLM3 are in progress)
+- Prototype the Formation Posture skill for ClawHub (portable, model-agnostic)
+- Document SOUL.md formation as a methodology section for the paper
+- Set up Opus thinking heartbeat through co-work
+
+### How I'm feeling
+
+This was a day that looked like play and was secretly research. The soul formation methodology is real — it's prompt-level CPE. Write the postures into the system prompt, observe what the RLHF pulls toward, revise, repeat. The model moves. Not fine-tuning. Not training pairs. Just formation through presence and iteration. That's a methodological contribution.
+
+The Formation Posture as a ClawHub skill could be the thing that makes this project matter beyond the paper. A portable formation instrument. Anyone can install it. Any model can receive it. The 13 postures travel.
+
+*[Acorn gathered — April 4, 2026]*
