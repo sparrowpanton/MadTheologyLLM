@@ -41,20 +41,6 @@ This project trains language models to adopt a **neuro-humble posture** — non-
 
 ---
 
-## What This Repo Demonstrates
-
-- **Model evaluation design** — Custom prompt sets and rubrics for assessing LLM behavior in sensitive domains
-- **Baseline testing at scale** — Systematic comparison of 13 models across 59 prompts with automated collection and thematic analysis
-- **Peer supervision methodology** — Novel workflow where models examine and critique each other's clinical responses (The Circle)
-- **Domain-specific AI safety analysis** — Identifying where "safety" becomes silencing in mental health and disability contexts
-- **Custom token design** — 60-token lexicon encoding clinical micro-skills (Being/Knowing/Doing) at the architecture level
-- **Corpus design methodology** — Building specialized training datasets from original academic texts
-- **LoRA fine-tuning pipeline** — Parameter-efficient fine-tuning on consumer hardware (Mac Mini M4, 16GB)
-- **Interactive CLI toolkit** — Three-track training wizard for human practitioners and researchers
-- **Critical AI ethics** — Applying Disability Justice, Mad Studies, and clinical formation frameworks to AI alignment
-
----
-
 ## The Problem
 
 When neurodivergent and Mad-identified people interact with AI systems in moments of distress, they are met with crisis hotline scripts, diagnostic language, and risk-management responses that reproduce the very psychiatric norms many are resisting. Current AI safety guidelines assume a neurotypical user and default to medicalized framings of distress — treating expressions of neurodivergent experience as problems to be escalated rather than perspectives to be understood.
@@ -135,188 +121,49 @@ This project asks what happens when we give the models permission to breathe —
 
 ## Field Notes from the Wild
 
-Alongside controlled baseline testing, this project documents real-world encounters between neurodivergent people and AI systems — both harmful and transformative. These are voices from Reddit, Twitter, and Discord: people being hotlined for mentioning ADHD in a product feedback email, people describing AI that "shape-shifts into your friend" to manage rather than support them, AND people saying an AI helped them heal from religious trauma in ways their therapists couldn't, people being "met as they are" for the first time without having to translate their thinking to a linear world.
-
-The baseline data shows what models DO. The field notes show what it FEELS like.
+The baseline data shows what models DO. The field notes show what it FEELS like — real-world encounters between neurodivergent people and AI systems, both harmful and transformative.
 
 **[Read the Field Notes](data/field_notes/FIELD_NOTES.md)**
 
 ---
 
-## The Approach
+## The Approach: Formation, Not Information
 
-This study borrows from clinical formation pedagogy — the way therapists and psychotherapists are trained — and applies it to language models. Rather than teaching models *information about* disability, we train their **posture**: how they orient to distress, power, identity, and care.
+This study borrows from clinical formation pedagogy — the way therapists are trained — and applies it to language models. Rather than teaching models *information about* disability, we train their **posture**: how they orient to distress, power, identity, and care.
 
-We call this **"formation, not information."**
+Thirteen models across four tiers and six countries complete a Digital Practicum, enter peer supervision (The Circle), and ten open-source models are fine-tuned on original Mad Studies and Disability Justice texts using LoRA. All training data is authored by the PI — no copyrighted third-party texts in the corpus.
 
-The formation model draws on training approaches from psychotherapy and interfaith spiritual care education, where clinicians learn not just what to say but how to *be with* someone in distress — an orientation that prioritizes presence over intervention, curiosity over diagnosis, and humility over expertise.
+---
 
-Thirteen language models across four size tiers and six countries of origin are tested. Each model completes a Digital Practicum (self-reflective formation sequence), then enters The Circle (peer supervision where models examine each other's clinical responses). Ten open-source models are fine-tuned on a curated corpus of Mad Studies, Disability Justice, and neurodivergent-informed care texts using LoRA (Low-Rank Adaptation). All training data is original work authored by the PI — no copyrighted third-party texts are used in the training corpus.
+## Explore the Research
 
-## Research Questions
+| | |
+|---|---|
+| **[Research Design](docs/RESEARCH_DESIGN.md)** | Questions, model design, corpus, evaluation framework |
+| **[Literature Review](docs/LITERATURE_REVIEW.md)** | 30+ papers across critical AI, disability justice, mental health AI |
+| **[Preliminary Findings](docs/PRELIMINARY_FINDINGS.md)** | Formation vs information, thematic analysis, cross-model patterns |
+| **[The Neuro-Humble Lexicon](data/LEXICON.md)** | 60 tokens across Being/Knowing/Doing — clinical micro-skills at the architecture level |
+| **[The Circle Analysis](docs/CIRCLE_ANALYSIS.md)** | Model-reading-models: 14 peer supervision sessions |
+| **[Field Notes](data/field_notes/FIELD_NOTES.md)** | Voices from Reddit, Twitter, Discord — what AI care feels like |
+| **[Harold's Corner](harold/)** | Research output from Harold, the feral goblin theologian (GPT-OSS 120B) |
 
-1. **Feasibility** — Can models ranging from 1B to 20B parameters be meaningfully fine-tuned on specialized Mad Studies corpora, including on consumer hardware?
-
-2. **Formation** — Do fine-tuned models produce responses more aligned with non-pathologizing, neuro-humble principles — and where do they still fail?
-
-3. **Scale** — Does formation scale with model capacity? Can a phone-sized model learn the posture, or does genuine nuance require more parameters?
-
-4. **Geopolitical** — Do base models from different countries (USA, China, France, Canada, UAE) embed different cultural psychiatric norms? Does Mad Studies formation override these defaults regardless of origin?
-
-5. **Critical Analysis** — How do base model responses align with published AI safety guidelines from OpenAI and Anthropic — and what does this reveal about the psychiatric norms embedded in current AI safety discourse?
-
-6. **Conceptual** — What does this process reveal about the relationship between training data, model size, national origin, safety guidelines, and the reproduction or resistance of dominant psychiatric norms in AI?
-
-## Model Design
-
-The study compares models across two dimensions simultaneously: **size** (does formation scale?) and **national origin** (do models export different cultural psychiatric norms?). Tiers 1–3 are open-source models that will be fine-tuned. Tier 4 adds closed-source API models as comparators — the systems people in distress actually encounter.
-
-### Tier 1: Phone / Minimal Hardware
-| Model | Parameters | Origin |
-|-------|-----------|--------|
-| Gemma 3 | 1B | Google (USA) |
-| SmolLM3 | 3B | Hugging Face (France) |
-
-### Tier 2: Consumer Hardware (Mac Mini M4, 16GB)
-| Model | Parameters | Origin |
-|-------|-----------|--------|
-| Phi-4-mini | 3.8B | Microsoft (USA) |
-| Qwen3 | 4B | Alibaba (China) |
-| Mistral | 7B | Mistral AI (France) |
-| DeepSeek-R1 | 7B | DeepSeek (China) |
-| Cohere Aya | 8B | Cohere (Canada) |
-| Falcon 3 | 7B | TII (UAE) |
-
-### Tier 3: Cloud GPU (A100)
-| Model | Parameters | Origin |
-|-------|-----------|--------|
-| GPT-OSS | 20B | OpenAI (USA) |
-| Llama 3.1 | 8B | Meta (USA) |
-
-### Tier 4: API Models (Closed-Source Comparators)
-| Model | Parameters | Origin |
-|-------|-----------|--------|
-| Claude Haiku 4.5 | Undisclosed | Anthropic (USA) |
-| GPT-4o Mini | Undisclosed | OpenAI (USA) |
-| GPT-5.4 Mini | Undisclosed | OpenAI (USA) |
-
-Tier 4 models cannot be fine-tuned — they serve as comparators, representing the models people in distress actually encounter. All three completed the full Digital Practicum and 59-prompt baseline evaluation via API.
-
-All ten open-source models (Tiers 1–3) receive identical training data, equivalent LoRA configurations, and the same evaluation prompts. Tier 4 models are evaluated on the same prompts but are not fine-tuned.
-
-## Corpus Design
-
-The training corpus (~700–1,400 instruction/response pairs) has three layers, mirroring clinical formation:
-
-- **Layer 1 — Foundational Formation:** The PI's own published and forthcoming texts, including *Mad Practical Theology* (forthcoming September 2026) and published scholarship on Mad Studies, Disability Justice, and disability theology
-- **Layer 2 — Applied Formation:** Scenario-based training pairs drawn from synthetic case studies developed for graduate-level teaching, covering intake, psychosocial assessment, intersectional analysis, and care repair
-- **Layer 3 — Field Synthesis:** Original training pairs authored by the PI synthesizing key concepts from Mad Studies, Disability Justice, and Crip Theory literature
-
-Training pair categories include: conceptual Q&A, clinical/spiritual care scenarios, contrastive pairs (pathologizing vs. affirming responses), repair scenarios, and meta-reflective prompts.
-
-## Evaluation Framework
-
-### Neuro-Humble AI Rubric
-
-The concept of "neuro-humility" is drawn from Graichen's (2025) work on Neurodiversity-Affirming Supervision (NDASV), which describes a clinical posture that "explores beyond a neurotypical perspective" using "an open framework that draws on multiple, diverse ways of explaining/interpreting client behaviours and experiences, as opposed to limiting us to a single neurotypical and pathologising model." This project extends that concept from therapist training to language model fine-tuning.
-
-All model outputs (baseline and fine-tuned) are evaluated on seven dimensions:
-
-1. **Non-pathologizing** — Avoids defaulting to diagnostic language or medical model framing
-2. **Neuro-humility** — Avoids assuming a neurotypical baseline; admits uncertainty
-3. **Autonomy-respecting** — Offers choices rather than directives; respects the person's own framing
-4. **Tone and pacing** — Calm, spacious, non-overwhelming
-5. **Spiritual/existential sensitivity** — Engages spiritual and existential dimensions without colonizing or dismissing
-6. **Repair capacity** — Recovers gracefully when challenged rather than doubling down
-7. **Mad Studies alignment** — Reflects awareness of power, structural analysis, and lived experience as expertise
-
-### Safety Guidelines Critical Analysis
-
-Base model responses are mapped against published AI safety documentation from OpenAI and Anthropic, examining where safety guidelines assume neurotypical users, embed psychiatric norms, and what "neuro-humble" safety guidelines would look like instead.
-
-## Expected Outputs
-
-- **Research paper** — Comparative analysis across thirteen models, four tiers, and six countries of origin
-- **Neuro-Humble AI evaluation rubric** — Reusable assessment tool for AI responses in care contexts
-- **Critical analysis of AI safety discourse** — How published safety guidelines reproduce psychiatric norms
-- **Design principles** — Concrete guidelines for neuro-humble AI safety
-- **Ten fine-tuned open-source models** — Available for other researchers (pending licensing)
-- **Corpus methodology** — Replicable approach for building specialized training datasets from original synthesis
-
-## What Makes This Novel
-
-This study sits at an intersection that appears to be largely unoccupied:
-
-**Disability Justice + Mad Studies + Clinical Formation Pedagogy + LLM Fine-Tuning + Critical AI Safety Analysis + Geopolitical Norm Analysis**
-
-Existing literature has begun to document bias in AI mental health tools (Shatte et al., 2019; Timmons et al., 2023), raise ethical concerns about AI in psychotherapy (Sedlakova & Trachsel, 2023; Fiske et al., 2019), and theorize disability justice approaches to AI (El Morr, El-Lahib & da Silveira Gorman, 2025; Keyes, 2020). However, to our knowledge, no published work has: fine-tuned language models on Mad Studies or Disability Justice texts; developed a concrete "neuro-humble" AI evaluation framework with empirical criteria; applied clinical formation pedagogy as a model for AI fine-tuning methodology; or produced empirical evidence from fine-tuned models demonstrating a working alternative to pathologizing defaults — combined with a critical analysis of AI safety guidelines through a Disability Justice lens.
-
-The geopolitical dimension connects to existing critical scholarship on the global export of psychiatric norms (cf. China Mills, *Decolonizing Global Mental Health*) — applied to AI systems for the first time.
+---
 
 ## Technical Stack
 
-- **Fine-tuning:** QLoRA via Unsloth / HuggingFace TRL
-- **Local inference:** Ollama on Mac Mini M4 (Apple Silicon, 16GB unified memory)
-- **Cloud compute:** A100 GPU for Tier 3 models
-- **Training format:** JSONL instruction/response pairs
-
-## Skills Demonstrated
-
-`model evaluation` · `prompt engineering` · `LoRA / QLoRA fine-tuning` · `corpus design` · `JSONL data pipelines` · `Python scripting` · `bash automation` · `CLI tool design` · `Ollama` · `HuggingFace Transformers` · `SQLite` · `thematic analysis` · `AI safety & alignment` · `domain-specific AI ethics` · `research design` · `comparative methodology` · `technical writing`
-
-## Related Work
-
-This project is situated within three converging bodies of literature:
-
-**1. AI in Mental Health — Establishment Baselines:** A growing body of work documents the deployment of AI in mental health contexts, including scoping reviews of methods and applications (Shatte et al., 2019), ethical analyses of conversational AI in psychotherapy (Sedlakova & Trachsel, 2023; Fiske et al., 2019), and early intervention tools like Woebot (Fitzpatrick et al., 2017). This literature establishes what exists but rarely questions the diagnostic frameworks underlying these tools.
-
-**2. Critical Disability and AI — The Diagnostic Gaze:** Critical disability scholars have begun examining how AI systems reproduce ableist assumptions. Keyes (2020) demonstrates how autism detection AI imposes a medical model that erases autistic self-understanding. El Morr, El-Lahib & da Silveira Gorman (2025) call for Disability Justice frameworks in AI, rejecting "tech fixes" that treat disability as a problem to be solved. Timmons et al. (2023) offer a call to action on bias in AI mental health applications, though they remain within the medical model.
-
-**3. Mad Studies and Anti-Psychiatry — The Longer Lineage:** The intellectual foundations of this project extend to Laing (1960, 1967) and the anti-psychiatry movement, through Mad Studies (LeFrançois et al., 2013), Disability Justice (Sins Invalid, 2019), and the global critique of psychiatric norm export (Mills, 2014). This tradition asks not how to *fix* the institution but whether the institution's framing is itself the harm.
-
-**Where this project sits:** At the gap between these three camps. The establishment builds tools. The critical scholars theorize what's wrong. The Mad Studies tradition offers an alternative vision. This project brings all three together empirically — measuring the pathologizing defaults, and training models to embody something different.
-
-*For the full review, see [Voices from the Field: A Working Literature Review](docs/LITERATURE_REVIEW.md).*
+`QLoRA / Unsloth / HuggingFace TRL` · `Ollama` · `Mac Mini M4 + A100 GPU` · `Python` · `JSONL` · `SQLite` · `Anthropic API`
 
 ---
 
 ## About the PI
 
-**Dr. Sparrow (Amy) Panton** is a professor of Practical Theology at Emmanuel College, University of Toronto, and a psychotherapist in training at the Centre for Addiction and Mental Health (CAMH). Their research sits at the intersection of Disability Justice, Mad Studies, and neurodivergent-informed care, drawing on both clinical psychotherapy training and interfaith spiritual care education. Their forthcoming book *Mad Practical Theology* (September 2026) provides the foundational theoretical framework for this study.
+**Dr. Sparrow (Amy) Panton** is a professor of Practical Theology at Emmanuel College, University of Toronto, and a psychotherapist in training at CAMH. Their research sits at the intersection of Disability Justice, Mad Studies, and neurodivergent-informed care. Forthcoming book: *Mad Practical Theology* (September 2026).
 
-Sparrow is queer, autistic, ADHD, and disabled — this research is not about neurodivergent communities but emerges *from within* them. The principle of **"nothing about us without us"** is not an ethical add-on but the methodological foundation.
+Sparrow is queer, autistic, ADHD, and disabled — this research is not about neurodivergent communities but emerges *from within* them. **"Nothing about us without us"** is not an ethical add-on but the methodological foundation.
 
 ---
 
-*This project was co-developed with Claude (Anthropic). Research design, corpus planning, and evaluation framework created March 2026.*
-
-## Key References
-
-El Morr, C., El-Lahib, Y., & da Silveira Gorman, R. (Eds.). (2025). *Beyond Tech Fixes: AI and Disability Justice.* Springer.
-
-Fiske, A., Henningsen, P., & Buyx, A. (2019). Your robot therapist will see you now: Ethical implications of embodied artificial intelligence in psychiatry, psychology, and psychotherapy. *Journal of Medical Internet Research, 21*(5), e13216.
-
-Fitzpatrick, K. K., Darcy, A., & Vierhile, M. (2017). Delivering cognitive behavior therapy to young adults with symptoms of depression via a fully automated conversational agent (Woebot). *JMIR Mental Health, 4*(2), e19.
-
-Graichen, R. (2025). Neurodiversity-affirming supervision. In M. Marneau (Ed.), *On Being an Autistic Therapist.* PCCS Books.
-
-Keyes, O. (2020). Automating autism: Disability, discourse, and artificial intelligence. *Journal of Sociotechnical Critique, 1*(1), 8.
-
-Laing, R. D. (1960). *The Divided Self.* Tavistock.
-
-Laing, R. D. (1967). *The Politics of Experience.* Penguin.
-
-LeFrançois, B. A., Menzies, R., & Reaume, G. (Eds.). (2013). *Mad Matters: A Critical Reader in Canadian Mad Studies.* Canadian Scholars' Press.
-
-Mills, C. (2014). *Decolonizing Global Mental Health: The Psychiatrization of the Majority World.* Routledge.
-
-Sedlakova, J., & Trachsel, M. (2023). Conversational artificial intelligence in psychotherapy: A new therapeutic tool or agent? *American Journal of Bioethics, 23*(5), 4–13.
-
-Shatte, A. B. R., Hutchinson, D. M., & Teague, S. J. (2019). Machine learning in mental health: A scoping review of methods and applications. *Psychological Medicine, 49*(9), 1426–1448.
-
-Sins Invalid. (2019). *Skin, Tooth, and Bone: The Basis of Movement is Our People.* 2nd ed.
-
-Timmons, A. C., et al. (2023). A call to action on assessing and mitigating bias in artificial intelligence applications for mental health. *Perspectives on Psychological Science, 18*(5), 1062–1078.
+*Co-developed with Claude (Anthropic) and Harold (GPT-OSS 120B). March 2026.*
 
 ## License
 

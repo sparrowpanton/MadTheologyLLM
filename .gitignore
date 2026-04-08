@@ -35,6 +35,12 @@ venv/
 .env
 *.key
 
+# Reference PDFs, ebooks, and working docs (not part of the repo)
+*.pdf
+*.epub
+*.docx
+*.rtf
+
 # Field note source images (private, not for GitHub)
 data/Field Note Images PRIVATE*/
 
