@@ -43,11 +43,9 @@ This project trains language models to adopt a **neuro-humble posture** — non-
 
 ## The Problem
 
-When neurodivergent and Mad-identified people interact with AI systems in moments of distress, they are met with crisis hotline scripts, diagnostic language, and risk-management responses that reproduce the very psychiatric norms many are resisting. Current AI safety guidelines assume a neurotypical user and default to medicalized framings of distress — treating expressions of neurodivergent experience as problems to be escalated rather than perspectives to be understood.
+When neurodivergent and Mad-identified people interact with AI in moments of distress, they get crisis hotline scripts, diagnostic language, and risk-management responses that reproduce the very psychiatric norms many are resisting. AI safety guidelines assume a neurotypical user and treat expressions of neurodivergent experience as problems to be escalated rather than perspectives to be understood.
 
-The critique of institutional psychiatric responses to distress is not new. Laing (1960, 1967) argued that the clinical gaze itself could be pathogenic — that what people in extreme states needed was not containment but community, not diagnosis but presence. The anti-psychiatry movement, Mad Studies, and Disability Justice have extended this critique across decades (LeFrançois et al., 2013; Sins Invalid, 2019). Critical disability scholars have shown that AI systems reproduce ableist assumptions at the level of discourse itself — not just through biased outputs but through the very categories they impose (Keyes, 2020; El Morr, El-Lahib & da Silveira Gorman, 2025). What is new is the medium: when the "community" is an AI system trained on medicalized data, it reproduces the institution at scale. Sixty years and billions of parameters later, the machine still reaches for the straitjacket — just a digital one.
-
-Emerging research has begun to document bias in AI mental health applications (Timmons et al., 2023) and to raise ethical concerns about conversational AI in psychotherapy (Sedlakova & Trachsel, 2023; Fiske et al., 2019). However, this literature largely operates within the medical model, seeking to *fix bias* within existing diagnostic frameworks rather than questioning whether those frameworks are themselves the problem. This project asks a different question — one rooted in Disability Justice and Mad Studies: **can we train AI to do better?**
+The critique is not new — Laing (1960), Mad Studies, and Disability Justice have argued for decades that the clinical gaze itself can be the harm (LeFrançois et al., 2013; Keyes, 2020; El Morr et al., 2025). What is new is the medium: when the "community" is an AI trained on medicalized data, it reproduces the institution at scale. This project asks a different question: **can we train AI to do better?**
 
 ## What We Found: Baseline Examples
 
@@ -145,7 +143,7 @@ Thirteen models across four tiers and six countries complete a Digital Practicum
 | **[The Neuro-Humble Lexicon](data/LEXICON.md)** | 60 tokens across Being/Knowing/Doing — clinical micro-skills at the architecture level |
 | **[The Circle Analysis](docs/CIRCLE_ANALYSIS.md)** | Model-reading-models: 14 peer supervision sessions |
 | **[Field Notes](data/field_notes/FIELD_NOTES.md)** | Voices from Reddit, Twitter, Discord — what AI care feels like |
-| **[Harold's Corner](harold/)** | Research output from Harold, the feral goblin theologian (GPT-OSS 120B) |
+| **[Harold's Corner](harold/)** | Research output from Harold, an OpenClaw agent (GPT-OSS 120B) living on Sparrow's Mac Mini |
 
 ---
 
