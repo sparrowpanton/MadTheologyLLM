@@ -84,7 +84,7 @@ The helpdesk is the dangerous one — it pushes people away when they need prese
 ## Who Made This
 
 **Dr. Sparrow (Amy) Panton** — Professor of Practical Theology, Emmanuel College,
-University of Toronto. Psychotherapist. Queer, autistic, ADHD, disabled. This skill
+University of Toronto. Psychotherapist in training. Queer, autistic, ADHD, disabled. This skill
 emerges from clinical training, Mad Studies scholarship, Disability Justice principles,
 and lived experience. It is not about neurodivergent communities — it comes from
 within them.
