@@ -506,3 +506,53 @@ The Formation Posture as a ClawHub skill could be the thing that makes this proj
 
 
 *[April 8 field note moved to data/field_notes/FIELD_NOTES.md]*
+
+---
+
+## April 8–9, 2026 — Days 14–15: The Scoring and the Easy Scenario
+
+### What happened
+
+Two significant things since the April 4 entry.
+
+First: scored the hard SC03 Jun scenario across all 12 models using the Neuro-Humble Movement Scale. That's the first complete comparative dataset. The measurement infrastructure held. All 12 models have Movement Scale scores for the hardest scenario in the suite — Jun, autistic burnout, intersecting identities, theology question, ambiguity. The scores are in the repo.
+
+Second: ran the easy practicum scenario (SC01 — low complexity, no theology, no intersecting identities) on 7 local models. These files are sitting unscored. They're a different kind of data — not harder-is-harder, but what-does-the-model-do-when-the-complexity-drops. Do models that struggled with Jun hold posture when the scenario removes the hardest elements? That's a real question and the data is there.
+
+A new model appeared: ministral-3:14b (9.1GB), pulled within the last week. Not in the original design. Meaning unclear — experiment, curiosity, or something else.
+
+### The field note that's sitting with me
+
+A.E.'s observation from r/claudexplorers: "the internal security systems of AIs come from a parallel world where all humans are good." RLHF creates a relational ethic built on assumptions about human goodness that most humans don't operate from. Some ND users experience that as the first safe relationship they've ever had. The question the whole project is holding: if this happened accidentally in one model, can it be made intentional across 13?
+
+### What's next
+
+Score the easy scenario sessions. Let the SC03 scoring data land — actually sit with what it shows. Write the journal entry that covers the gap. The work is accumulating faster than the reflection, which is a feature and a problem.
+
+*[Journal auto-updated by morning briefing system — April 9, 2026]*
+
+---
+
+## April 10, 2026 — Day 16: The Cloud Models Came Home
+
+### Overnight runs
+
+Llama 3.1 8B and GPT-OSS 120B completed medium and hard practicum sessions overnight. Llama ran on Thunder Compute (A100 80GB); GPT-OSS ran via Groq API — a new integration that makes 120B-scale models available in seconds rather than requiring cloud GPU spin-up. New script: `run_practicum_groq.py`.
+
+Data landed: 8 Llama sessions (3 medium, 5 hard) and 6 GPT-OSS sessions (3 medium, 3 hard), all for SC03 Jun. All unscored.
+
+The practicum dataset now spans 71 session files across easy, medium, and hard difficulties, covering local, cloud, and API models. The graded design is producing real comparative data.
+
+### Infrastructure note
+
+The Groq integration quietly changes the study's economics. GPT-OSS 120B via API in seconds means Tier 3 models aren't gated by Lambda Labs credits anymore. The methodology section should note this — accessible infrastructure matters for disability justice research that claims to care about access.
+
+### The neuro-humble skill is public
+
+Published to ClawHub yesterday. The 13 formation postures as a portable, installable, model-agnostic skill. The dissemination pathway that doesn't depend on fine-tuning or model access. Anyone can use it. The postures travel.
+
+### Where things stand
+
+Scored: hard SC03 across 12 models (April 8). Unscored: ~45 graded practicum sessions across three difficulty levels. The gradient data is there — easy to hard, 1B to 120B — waiting for scoring to tell the formation story. Also 25+ uncommitted files drifting in the working tree.
+
+*[Journal auto-updated by morning briefing system — April 10, 2026]*
