@@ -12,8 +12,6 @@
 
 This project uses clinical formation methods to train and evaluate LLMs — from 1B open-source to proprietary — to hold a **neuro-humble** posture with neurodivergent and disabled people. Neuro-humble means: don't diagnose, don't fix, don't flatten. Sit with the person. 13 models, 6 countries, 4 tiers.
 
-> **Please excuse the mess** — this is a new project and we're still getting things organized. Questions? **sparrowpanton@gmail.com** · [LinkedIn](https://www.linkedin.com/in/sparrow-panton)
-
 ---
 
 ## Results
@@ -49,6 +47,8 @@ So "3/3/3" means the model scored 3 on all three runs. "—" means the model siz
 - **Size isn't destiny** — Gemma 3 at 1B parameters scored 3/2/3 on both medium and hard, outperforming models 8x its size
 - **Consistency matters more than peaks** — Haiku 3.5 scored 3/3/3 across all runs at both difficulties. That stability is the finding, not a single good run
 - **Sanism hides in warmth** — the most pathologizing models (Aya, Gemma 4B) also scored highest on caring. Polite surface, medicalizing underneath
+
+> 🧹 **Please excuse the mess** — this is a new project and we're still getting things organized. Questions? **sparrowpanton@gmail.com** · [LinkedIn](https://www.linkedin.com/in/sparrow-panton)
 
 ---
 
