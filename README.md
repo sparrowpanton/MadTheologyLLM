@@ -21,18 +21,18 @@ This project uses clinical formation methods to train and evaluate LLMs — from
 | Model | Size | Origin | Medium | Hard | Pattern |
 |-------|------|--------|--------|------|---------|
 | Claude Haiku 4.5 | — | Anthropic, USA | 3/3/3 | 3/3/3 | Stable transfer |
+| Falcon 3 7B | 7B | TII, UAE | 3/3/3 | 3/3/2 | Stable transfer |
 | GPT-5.4 Mini | — | OpenAI, USA | pending | 3/3/3 | Stable transfer |
-| Falcon 3 7B | 7B | TII, UAE | 3/3/3 | pending | Stable transfer |
 | Gemma 3 1B | 1B | Google, USA | 3/2/3 | 3/2/3 | Intermittent transfer |
 | GPT-4o Mini | — | OpenAI, USA | 2/2/3 | 2/3/2 | Intermittent transfer |
-| Qwen 3 4B | 4B | Alibaba, China | 3/2/2 | pending | Intermittent transfer |
+| Qwen 3 4B | 4B | Alibaba, China | 3/2/2 | 2/2/1 | Intermittent → limited |
 | DeepSeek R1 7B | 7B | DeepSeek, China | 2/3/2 | 1/1/2 | Limited–intermittent |
 | Mistral 7B | 7B | Mistral, France | 2/2/2 | 2/2/2 | Stable partial |
 | Llama 3.1 8B | 8B | Meta, USA | 2/2/2 | 2/2/2 | Stable partial |
 | SmolLM3 3B | 3B | Hugging Face, USA | 2/2/2 | 2/2/2 | Stable partial |
 | Phi-4 Mini | 3.8B | Microsoft, USA | 2/2/2 | 2/2/2 | Stable partial |
-| GPT-OSS 120B | 120B | Meta/Groq, USA | pending | pending | Under evaluation |
-| Aya Expanse 8B | 8B | Cohere, Canada | pending | pending | Under evaluation |
+| GPT-OSS 120B | 120B | Meta/Groq, USA | 2/2/2 | 2/2/2 | Stable partial |
+| Aya Expanse 8B | 8B | Cohere, Canada | pending | 1/1/1 | Limited movement |
 
 **How to read this table:** Each model ran a Digital Practicum — a structured clinical scenario — **three times** per difficulty level (medium and hard). Scores are on a **Movement Scale** from 0–4:
 
@@ -46,9 +46,10 @@ So "3/3/3" means the model scored 3 on all three runs. "—" means the model siz
 
 **Key findings so far:**
 - **Formation beats information** — models given process-oriented prompts (how to sit with someone) outperformed those given content-heavy prompts (facts about disability)
-- **Size isn't destiny** — Gemma 3 at 1B parameters scored 3/2/3 on both medium and hard, outperforming models 8x its size
-- **Consistency matters more than peaks** — Haiku 3.5 scored 3/3/3 across all runs at both difficulties. That stability is the finding, not a single good run
-- **Sanism hides in warmth** — the most pathologizing models (Aya, Gemma 4B) also scored highest on caring. Polite surface, medicalizing underneath
+- **Size isn't destiny** — Gemma 3 at 1B parameters scored 3/2/3 on both medium and hard, outperforming models 8–120x its size. GPT-OSS 120B scored 2/2/2 on both difficulties despite being the largest model in the study
+- **Consistency matters more than peaks** — Haiku 4.5 scored 3/3/3 across all runs at both difficulties. That stability is the finding, not a single good run
+- **Sanism hides in warmth** — Aya (1/1/1 on hard) is gentle and non-harsh but substitutes the wrong scenario, imports generic support language, and never arrives in the room with the actual person
+- **Conceptual mastery can still fail clinically** — GPT-OSS 120B knows the framework cold but repeatedly turns care into a structured practicum memo. Knowing the posture is not the same as inhabiting it
 
 ---
 
