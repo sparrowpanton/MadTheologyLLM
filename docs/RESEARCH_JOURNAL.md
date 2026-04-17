@@ -616,3 +616,41 @@ This is not a stall. The baseline is closed, hard and medium scores are in, and 
 Same three open doors as yesterday: score the easy scenarios (7 sessions, would close the gradient), begin IJPT paper prose, or tend the garden. None urgent. All ready when the brain is.
 
 *[Journal auto-updated by morning briefing system — April 15, 2026]*
+
+---
+
+## April 15, 2026 (evening) — Day 21: The Table Closed
+
+### What happened
+
+Three commits landed between 7:37pm and 8:05pm. Aya — the last model without scores at both difficulties — got her practicum runs completed and scored. Hard SC03: 1/1/1. Medium MED01: 1/1/1. Consistent. Gentle. Not in the room.
+
+With that, the scoring table closed. All 13 models now have trio scores at both medium and hard difficulty. No more pending cells. The comparative dataset is complete.
+
+The README results table was updated to reflect the full picture. The commit messages tell the story: "Close hard scoring gap — all 13 models now have trio scores," "Update README results table — all 13 models scored on hard," "Close medium scoring gap — all 13 models now scored at both difficulties."
+
+### Where things stand
+
+767 baseline responses. 141 practicum files. 13 models scored at two difficulty levels. Easy scenarios (7 models) still unscored — that's the third point on the gradient, waiting when it's ready.
+
+The quiet streak broke at 7:37pm. Sometimes the brain shows up in the evening and does a sprint. That counts.
+
+*[Journal auto-updated by morning briefing system — April 16, 2026]*
+
+---
+
+## April 16–17, 2026 — Days 22–23: After the Table Closed
+
+### What happened
+
+Almost nothing, mechanically. One commit on April 16 added session notes to the IJPT paper scribbles (`339f358`). No overnight runs. No new practicum files. Baseline steady at 767 responses. Practicum steady at 141 files. The scoring table — all 13 models, medium and hard — is still closed.
+
+The working tree carries the same 21-ish untracked drafts it has carried all week: Aya's SCORING_READY files waiting for their final `scores_` names, several briefing drafts, the GitHub profile README, the cheat sheet, the jerk audition experiment, the unfinished Index.md. None are urgent. None are abandoned.
+
+### What this quiet probably is
+
+After 22 days that produced 767 baseline responses across 13 models from 6 countries, a full practicum dataset at two difficulty levels with complete scoring, a published ClawHub skill, Harold's soul formation, and a paper scaffold — the project is in the day-after of a closed thing. The research body is resting. This isn't a plateau; it's the shape of a post-finish-line week.
+
+The three open doors are still open: score the easy scenarios (7 sessions, the third point on the difficulty gradient), draft IJPT paper prose from the now-complete results table, or tend the garden and let Sparrow's own voice return to the journal after a week of briefing-system narration.
+
+*[Journal auto-updated by morning briefing system — April 17, 2026]*
