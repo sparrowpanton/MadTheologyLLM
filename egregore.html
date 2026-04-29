@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Examples of how Egregore helps creators build a custom shorthand language for working with AI models."
+    >
+    <title>Egregore Examples</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Site header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">AI Tools</a>
+        <div class="nav-links">
+          <a href="index.html#tools">Tools</a>
+          <a href="index.html#about">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero detail-hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="crumb"><a href="index.html#tools">Back to tools</a></p>
+          <p class="eyebrow">Egregore in action</p>
+          <h1 id="page-title">A shorthand language your AI can learn from you.</h1>
+          <p class="lede">
+            Egregore helps you build a small personal vocabulary for the things you keep having to explain
+            to every model, in every new session.
+          </p>
+        </div>
+
+        <aside class="signal-panel" aria-label="Egregore quick facts">
+          <p class="panel-kicker">What changes</p>
+          <ul>
+            <li>Less re-explaining</li>
+            <li>Portable context</li>
+            <li>Brain-friendly tokens</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="example-section" aria-labelledby="examples-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Examples</p>
+          <h2 id="examples-heading">The CLI interview runs in five acts.</h2>
+          <p class="section-note">
+            These are three very simple examples. The actual CLI gives you a richer set of choices for
+            building a language that fits your life, your models, and the kind of help you need.
+          </p>
+        </div>
+
+        <div class="example-grid">
+          <article class="example-card example-card-wide">
+            <h2>How the interview works</h2>
+            <ol class="act-list">
+              <li>
+                <strong>Sigils</strong>
+                emoji-markers for your current state: 🪫 zero bandwidth, 🔥 hyperfocus, 🤫 hush,
+                🪨 friction, ⚖️ stable.
+              </li>
+              <li>
+                <strong>Anchors</strong>
+                short tokens for what your life is touching: 🎓 primary project, 🧾 obligations,
+                🏠 household, 🌊 internal landscape.
+              </li>
+              <li>
+                <strong>Pulses</strong>
+                recurring situations you do not want to keep re-explaining, plus your compression setting:
+                🌀 spiral, 🧱 stuck, 🧵 thread-back, ⏳ time pressure.
+              </li>
+              <li>
+                <strong>Genogram</strong>
+                your humans and your AI constellation: 👤 you, 🫂 trusted people, 🤖 models, 🧭 roles.
+              </li>
+              <li>
+                <strong>Register</strong>
+                tone preferences and dealbreakers: 🧭 direct, 🕯️ gentle, ✂️ concise, 🚫 no pep talk.
+              </li>
+            </ol>
+            <p class="small-note">
+              All five acts are currently wired up in skeletal form and iterating toward something richer.
+            </p>
+          </article>
+
+          <article class="example-card example-card-wide">
+            <h2>Use case: grad student</h2>
+            <p>
+              A grad student uses Egregore to compress thesis context, advisor expectations, teaching
+              load, and the exact kind of feedback that helps them write without freezing.
+            </p>
+            <pre class="code-sample">sigil: ⚖️ stable
+anchors: 🎓 thesis, 🧑‍🏫 supervisor-thread, 📚 seminar-prep
+pulse: 🌀 citation-spiral / medium compression
+register: 🧭 direct + 🕯️ kind, 🚫 no fake urgency
+
+Prompt: Help me turn these notes into one paragraph I can revise.</pre>
+          </article>
+
+          <article class="example-card example-card-wide">
+            <h2>Passing a shard from GPT to Claude</h2>
+            <p>
+              A shard is a small handoff note. If the grad student spent the day working with GPT, they
+              can give Claude the shard instead of reconstructing the whole day from scratch.
+            </p>
+            <pre class="code-sample">shard: thesis-day-0429
+from: GPT
+to: Claude
+
+sigil: ⚖️ stable, now a little 🪫
+anchors: 🎓 thesis chapter 2, 📚 methods sources, 🧑‍🏫 supervisor concern
+pulse: 🌀 citation-spiral / medium compression
+register: 🧭 direct, 🕯️ kind, critique structure before style
+
+handoff:
+GPT helped me sort six messy notes into a draft paragraph.
+I am worried the paragraph lists sources instead of making an argument.
+
+request:
+Claude, review this for argument clarity and tell me the one revision that would help most.</pre>
+          </article>
+
+          <article class="example-card">
+            <h2>Use case: dev</h2>
+            <p>
+              A developer uses Egregore to tell different AI coding tools how much context to preserve,
+              when to ask before refactoring, and which project constraints matter today.
+            </p>
+            <pre class="code-sample">sigil: 🔥 hyperfocus
+anchors: 🧩 auth-bug, ✅ tests-first, 🚧 no-large-refactor
+pulse: 🕳️ rabbit-hole-risk / high compression
+register: ✂️ concise, specific, show file paths</pre>
+          </article>
+
+          <article class="example-card">
+            <h2>Use case: disability scaffolding</h2>
+            <p>
+              Someone who uses AI as disability scaffolding builds a vocabulary for low-energy days,
+              sensory load, executive dysfunction, and support that does not become another task.
+            </p>
+            <pre class="code-sample">sigil: 🪫 zero bandwidth
+anchors: 💊 meds, 🍲 food, 📬 inbox, 📅 appointment
+pulse: 🧱 task-initiation / low compression
+register: 🕯️ gentle, one step, 🚫 no cheerleading</pre>
+          </article>
+
+          <article class="example-card example-card-wide">
+            <h2>What gets exported</h2>
+            <p>
+              The goal is a compact language guide you can bring into GPT, Claude, Gemini, a local model,
+              or an agent. Instead of re-explaining your whole operating system every time, you can start
+              with a few tokens that carry the context.
+            </p>
+            <pre class="code-sample">Today: 🪫 zero bandwidth + 📬 inbox + 🧱 task-initiation
+Use: low compression, one step at a time, 🚫 no pep talk
+Ask before adding structure.</pre>
+            <p>
+              At first, you will probably use the sigils with words. As you and your AI get more familiar
+              with the language, you can type only the emojis. The point is that you are learning the
+              language together, which can help on days when finding words is hard.
+            </p>
+            <pre class="code-sample">🪫 📬 🧱 🚫
+
+Translation:
+Low bandwidth. Inbox. Task-initiation stuck. No pep talk.</pre>
+          </article>
+
+          <article class="example-card example-card-wide">
+            <h2>Try the tool</h2>
+            <p>
+              Egregore is built as a terminal tool for people who want more control over how their AI
+              sessions begin, remember context, and respond to access needs.
+            </p>
+            <div class="button-row">
+              <a class="button" href="https://github.com/sparrowpanton/egregore">View on GitHub</a>
+              <a class="button button-secondary" href="https://github.com/sparrowpanton/Disability-Justice-LLM">
+                Read the research
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Open source. MIT licensed. Take it. Fork it. Make it yours.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
